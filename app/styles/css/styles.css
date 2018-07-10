@@ -6381,8 +6381,7 @@ blockquote:after {
   background-color: #6f1b2b;
   color: #fff;
   text-decoration: none;
-  padding: 9px;
-  font-size: 13px; }
+  border: solid #6f1b2b; }
 
 .copyright {
   font-size: 10px;
@@ -6394,8 +6393,3 @@ blockquote:after {
 .social-media-ul {
   list-style: none;
   padding-left: 0px; }
-
-@media (max-width: 768px) {
-  .team-section {
-    background: #333;
-    height: auto; } }
