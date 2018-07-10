@@ -18,6 +18,7 @@ blockquote {
       content: close-quote;
   }
 
+
 .background-banner
 {
     background-image: url(../../img/banner.jpg);
@@ -129,8 +130,7 @@ color: #fff;
     background-color: $text-color;
     color: #fff;
     text-decoration: none;
-    padding: 9px;
-    font-size: 13px;
+    border:solid $text-color;
 
 }
 
@@ -148,12 +148,6 @@ color: #fff;
     padding-left:0px;
 }
 
-@media (max-width: 768px){
-    
-    .team-section{
-        background: #333;
-        height: auto;
-    }
-}
+
 
 
