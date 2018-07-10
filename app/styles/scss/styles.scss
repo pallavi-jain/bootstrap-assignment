@@ -1,0 +1,159 @@
+$text-color: #6f1b2b;
+// @import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../../bower_components/bootstrap/scss/bootstrap';
+
+
+
+html, body{
+    height: 100%;
+}
+
+blockquote {
+    quotes: "“" "”" "‘" "’";
+  }
+  blockquote:before {
+      content: open-quote;
+  }
+  blockquote:after {
+      content: close-quote;
+  }
+
+.background-banner
+{
+    background-image: url(../../img/banner.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 60vh;
+}
+
+.jumbotron-heading{
+    font-size: 4.5rem;
+}
+
+.navbar-light .navbar-brand, .startup-text-color, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link.active, footer h5{
+    color: $text-color;
+}
+
+.section-margin-top{
+    margin-top: 4rem;
+}
+
+.section-padding-top{
+    padding-top: 4rem; 
+}
+
+.white-color{
+color: #fff;
+}
+
+.background-light{
+    background-color: #f3ece3;
+}
+
+.navbar-logo{
+    font-size: 1.7rem;
+    text-decoration: underline;
+}
+
+.marketing {
+    .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+  .marketing {
+      h2 {
+    font-weight: 400;
+  }
+}
+  .marketing {
+      .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+.img-responsive{
+    width:100%;
+    height:auto;
+}
+
+.team-section{
+    height: auto;
+    width: 100%;
+    background-image: url(../../img/team-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.teamwrap{
+    margin: 0 auto;
+}
+
+.section-text{
+    color: #dcdcdc;
+    opacity: .8;
+    letter-spacing: 0.02em;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.intro-text{
+    font-size: 16px;
+    text-align: center;
+}
+
+.client-section{
+    background-color: #efefef;
+}
+
+.footer-text{
+    color: $text-color;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.contact-btn{
+    background-color: $text-color;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px;
+    font-size: 13px;
+
+}
+
+.copyright{
+    font-size: 10px;
+    padding-top: 10px
+}
+
+.copyright-border{
+    border-top: 1px solid #868686;
+}
+
+.social-media-ul{
+    list-style: none;
+    padding-left:0px;
+}
+
+@media (max-width: 768px){
+    
+    .team-section{
+        background: #333;
+        height: auto;
+    }
+}
+
+
