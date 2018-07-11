@@ -1,0 +1,19 @@
+html, body
+{
+    height: 100%;
+}
+
+blockquote 
+{
+    quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before 
+{
+    content: open-quote;
+}
+
+blockquote:after 
+{
+    content: close-quote;
+}
