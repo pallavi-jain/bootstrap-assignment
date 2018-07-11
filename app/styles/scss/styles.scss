@@ -4,11 +4,14 @@ $navbar-light-active-color:#6f1b2b;
 $navbar-light-color: #6f1b2b;
 $header-bg: #f3ece3;
 
-//  @import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
-//  @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fa-solid.scss";
-//  @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fa-brands.scss";
+  @import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+  @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fa-solid.scss";
+  @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fa-brands.scss";
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'base';
+@import 'layout';
+@import 'module';
+@import 'state';
 
 @mixin backgroundImage($bgImage) {
 
@@ -39,11 +42,6 @@ $header-bg: #f3ece3;
     text-decoration: underline;
 }
 
-.img-responsive{
-    width:100%;
-    height:auto;
-}
-
 .team-section{
     height: auto;
     width: 100%;
@@ -70,27 +68,7 @@ $header-bg: #f3ece3;
     background-color: #efefef;
 }
 
-footer{
-    .copyright{
-        font-size: 10px;
-        padding-top: 10px
-    }
-    
-    .copyright-border{
-        border-top: 1px solid #868686;
-    }
 
-    .footer-text{
-        color: $text-color;
-        text-decoration: underline;
-        font-size: 40px;
-    }
-    
-    .social-media-ul{
-        list-style: none;
-        padding-left:0px;
-    }
-}
 
 
 

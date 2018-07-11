@@ -1,0 +1,21 @@
+footer{
+    .copyright{
+        font-size: 10px;
+        padding-top: 10px
+    }
+    
+    .copyright-border{
+        border-top: 1px solid #868686;
+    }
+
+    .footer-text{
+        color: $text-color;
+        text-decoration: underline;
+        font-size: 40px;
+    }
+    
+    .social-media-ul{
+        list-style: none;
+        padding-left:0px;
+    }
+}
