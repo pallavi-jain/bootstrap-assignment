@@ -27,7 +27,7 @@ blockquote {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 60vh;
+    min-height: 65vh;
 }
 
 .jumbotron-heading{
@@ -120,33 +120,40 @@ color: #fff;
     background-color: #efefef;
 }
 
-.footer-text{
-    color: $text-color;
-    text-decoration: underline;
-    font-size: 40px;
+
+
+footer{
+    .copyright{
+        font-size: 10px;
+        padding-top: 10px
+    }
+    
+    .copyright-border{
+        border-top: 1px solid #868686;
+    }
+
+    .footer-text{
+        color: $text-color;
+        text-decoration: underline;
+        font-size: 40px;
+    }
+    
+    .contact-btn{
+        background-color: $text-color;
+        color: #fff;
+        text-decoration: none;
+        border:solid $text-color;
+    
+    }
+    
+    .social-media-ul{
+        list-style: none;
+        padding-left:0px;
+    }
 }
 
-.contact-btn{
-    background-color: $text-color;
-    color: #fff;
-    text-decoration: none;
-    border:solid $text-color;
 
-}
 
-.copyright{
-    font-size: 10px;
-    padding-top: 10px
-}
-
-.copyright-border{
-    border-top: 1px solid #868686;
-}
-
-.social-media-ul{
-    list-style: none;
-    padding-left:0px;
-}
 
 
 

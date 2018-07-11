@@ -6302,7 +6302,7 @@ blockquote:after {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 60vh; }
+  min-height: 65vh; }
 
 .jumbotron-heading {
   font-size: 4.5rem; }
@@ -6372,24 +6372,24 @@ blockquote:after {
 .client-section {
   background-color: #efefef; }
 
-.footer-text {
+footer .copyright {
+  font-size: 10px;
+  padding-top: 10px; }
+
+footer .copyright-border {
+  border-top: 1px solid #868686; }
+
+footer .footer-text {
   color: #6f1b2b;
   text-decoration: underline;
   font-size: 40px; }
 
-.contact-btn {
+footer .contact-btn {
   background-color: #6f1b2b;
   color: #fff;
   text-decoration: none;
   border: solid #6f1b2b; }
 
-.copyright {
-  font-size: 10px;
-  padding-top: 10px; }
-
-.copyright-border {
-  border-top: 1px solid #868686; }
-
-.social-media-ul {
+footer .social-media-ul {
   list-style: none;
   padding-left: 0px; }
