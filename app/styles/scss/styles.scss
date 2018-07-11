@@ -1,90 +1,62 @@
 $text-color: #6f1b2b;
+$primary: #6f1b2b;
+$header-bg: #f3ece3;
+
 //  @import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 //  @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fa-solid.scss";
 //  @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fa-brands.scss";
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
-
-
-html, body{
+html, body
+{
     height: 100%;
 }
 
-blockquote {
-    quotes: "“" "”" "‘" "’";
-  }
-  blockquote:before {
-      content: open-quote;
-  }
-  blockquote:after {
-      content: close-quote;
-  }
-
-
-.background-banner
+blockquote 
 {
-    background-image: url(../../img/banner.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    min-height: 65vh;
+    quotes: "“" "”" "‘" "’";
 }
 
-.jumbotron-heading{
-    font-size: 4.5rem;
+blockquote:before 
+{
+    content: open-quote;
+}
+
+blockquote:after 
+{
+    content: close-quote;
+}
+
+
+
+@mixin backgroundImage($bgImage) {
+
+    background-image: $bgImage;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.background-banner
+{ 
+    @include backgroundImage(url(../../img/banner.jpg));
+    position: relative;
+    min-height: 65vh;
 }
 
 .navbar-light .navbar-brand, .startup-text-color, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link.active, footer h5{
     color: $text-color;
 }
 
-.section-margin-top{
-    margin-top: 4rem;
-}
-
-.section-padding-top{
-    padding-top: 4rem; 
-}
-
-.white-color{
-color: #fff;
-}
-
 .background-light{
-    background-color: #f3ece3;
+    background-color: $header-bg;
 }
 
 .navbar-logo{
     font-size: 1.7rem;
     text-decoration: underline;
 }
-
-.marketing {
-    .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-}
-
-  .marketing {
-      h2 {
-    font-weight: 400;
-  }
-}
-  .marketing {
-      .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
-}
-
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-  }
 
 .img-responsive{
     width:100%;
@@ -94,16 +66,9 @@ color: #fff;
 .team-section{
     height: auto;
     width: 100%;
-    background-image: url(../../img/team-bg.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @include backgroundImage(url(../../img/team-bg.jpg));
 }
 
-.teamwrap{
-    margin: 0 auto;
-}
 .teamDesc{
     color: #333;
 }
@@ -124,8 +89,6 @@ color: #fff;
     background-color: #efefef;
 }
 
-
-
 footer{
     .copyright{
         font-size: 10px;
@@ -140,14 +103,6 @@ footer{
         color: $text-color;
         text-decoration: underline;
         font-size: 40px;
-    }
-    
-    .contact-btn{
-        background-color: $text-color;
-        color: #fff;
-        text-decoration: none;
-        border:solid $text-color;
-    
     }
     
     .social-media-ul{
